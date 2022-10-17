@@ -57,6 +57,7 @@
                     {% endif %}
                 </a>
                 <div id="like-count">
+                    {% csrf_token %}
                 {{ post.like_count }}
                 </div>
             </div>
