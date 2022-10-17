@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+<section class="content">
+    <div id="edit-header" >
+        <img src="/static/img/greenlogo.svg" alt="" class="main-logo" style="width: 11%; margin-right: 10px; margin-bottom: 8px;" >
+        <h1>Edit</h1>
+    </div>
+        <section class="posts-form">
+        <form  method="POST" enctype="multipart/form-data" id="editform">
+                {% csrf_token %}
+        </section>
+
+        <div class="post-inside" >
+        {% if post.image %}
+        <div class="userimg" >
+                <img src="/static/img/user.png" width="60px" >
+        </div>
+        
+        {% endif %}
+        <div class="values" style="width: 60%;" >
+        <input type="text" name="name" id="name" value="{{ post.name }}" required>
+        <br>
+        <textarea  type="text" name="body" id="body" value="{{ post.body }}" rows="5">{{ post.body}}</textarea>
+        </div>
+        </div>
+
+        {% if post.image %}
+        <img src="{{ post.image.url }}" alt="" style="width: 60%; border-radius: 5%; margin-left: 19%; margin-bottom: 3%;"; class="postedimage" /> 
+        {% endif %}
+        
+       <div class="post-end">
+        <input class="edit-file" name="image" id="file" type="file" style="font-size: 16px;"/>
+​
+        <input class="edit_submit" type="submit" id="tweet" value="Update" />
+​
+        <a href="cancel" id="cancel">Cancel</a>
+​       </div>
+    </form>
+​
+    
+</section>
+
+{% endblock %}

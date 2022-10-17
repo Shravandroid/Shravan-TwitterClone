@@ -1,0 +1,252 @@
+/*
+Common
+********************************/
+
+html,
+body {
+    height: 100%;
+    margin: auto;
+    font-family: sans-serif;
+
+}
+
+
+
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+
+/*
+Post
+********************************/
+
+.post_form {
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.post_form input[type=text] {
+    width: 80%;
+    margin-bottom: 12px;
+    padding: 11px;
+    border: 1px solid #ccc;
+    background-color: paleturquoise;
+}
+
+.post_form input[type=file] {
+    padding: 10px;
+    border: 1px;
+    font-size: 17px;
+
+}
+
+.post_form input[type=submit] {
+    font-size: 17px;
+    background-color: rgb(29, 161, 242);
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 2px;
+
+}
+.post_form .submit input[value=Tweet] {
+    padding: 5px;
+}
+
+#dil-posts {
+    
+    display: flex;
+    margin-top: 4px;
+}
+
+#like-count {
+    padding-top: 6px;
+    padding-left: 8px;
+}
+
+
+
+
+
+.post_form textarea {
+    width: 80%;
+    padding: 25px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+    background: #e6fef7;
+
+}
+
+.post-button {
+    width: 80%;
+}
+
+
+.posts ul {
+    padding: 0;
+}
+
+.posts li {
+    position: relative;
+    display: flex;
+    padding: 17px;
+    border-top: 1px solid #ccc;
+}
+
+.posts li .menu_icon {
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 18px;
+}
+
+.posts li .menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px 22px;
+    font-size: 14px;
+    border-radius: 3px;
+  
+}
+
+.posts li .menu a {
+    text-decoration: none;
+
+}
+
+
+.posts li .logo {
+    flex-basis: 15%;
+}
+
+.posts li .logo img {
+    width: 60%;
+}
+
+.posts li .name_body {
+    flex-basis: 85%;
+}
+
+.posts li .name_body .name {
+    font-weight: bold;
+}
+.posts li .name_body .datetime {
+    color: grey;
+    font-size: 9px;
+}
+.posts img {
+    width: 80%;
+    border-radius: 3%;
+}
+
+
+.main-heading img {
+    width: 11%;
+    margin-right: 18px;
+    margin-bottom: 18px;
+    margin-left:-10px ;
+    
+}
+
+.main-heading {
+    display: flex;
+}
+
+#edit-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #CCC;
+}
+
+.post-inside {
+    display: flex;
+}
+
+.userimg {
+    margin-right: 50px;
+}
+
+#name {
+    margin-bottom: 10px;
+}
+
+.content .post-inside .values input[type=text] {
+    border: 0px;
+    width: 100%;
+    background: #e6fef7;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+.content .post-inside .values textarea {
+    border: 0px;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 0px;
+    width: 100%;
+    background: #e6fef7;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.submit input[value=Tweet] {
+    width: 111px;
+    padding: 6px;
+    border-radius: 20px;
+
+}
+
+#cancel {
+    background-color: rgb(73, 73, 73);
+    color: white;
+    margin-left: 30px;
+    border: 2px solid #e6fef7;
+    padding: 9px 21px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.content .post-end .edit_submit {
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: rgb(29, 161, 242);
+    color: white;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
